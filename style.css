@@ -1,0 +1,535 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+.wrapper {
+    margin-top: -18px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -18px;
+}
+
+.container {
+    height: 420px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.Reg{
+    border-radius: 10px;
+    background-color: #1266F1;
+    padding: 7px 10px;
+}
+.card {
+    width: 90px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card:hover{
+    box-shadow: 0 0 20px 0px rgba(224, 218, 218, 0.5);
+  }
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F08%2Fparis-2024-olympics-stadium-images-news-001.jpg?cbr=1&q=90');
+}
+.card[for="c2"] {
+    background-image: url('https://guide2sucess.com/wp-content/uploads/2023/06/radhika-merchant-shloka-mehta-anand-piramal-net-wealth-and-educational-qualifications-and-other-details.jpg');
+}
+.card[for="c3"] {
+    background-image: url('https://www.visittnt.com/blog/wp-content/uploads/2018/07/Mumbai.jpg');
+}
+.card[for="c4"] {
+    background-image: url('https://www.visittnt.com/blog/wp-content/uploads/2019/09/navratri.jpg');
+}
+.card[for="c5"] {
+    background-image: url('https://img.uhdpaper.com/wallpaper/deadpool-vs-wolverine-in-deadpool-wolverine-movie-152@3@c');
+}
+.card[for="c6"] {
+    background-image: url('https://img.uhdpaper.com/wallpaper/deadpool-vs-wolverine-in-deadpool-wolverine-movie-152@3@c');
+}
+body {
+    background-color: rgba(4, 0, 35, 255);
+    position: relative; /* Position relative for absolute positioning */
+  }
+  .navbar {
+    z-index: 1; /* Ensure navbar stays above the big-logo */
+    font-family:'Fira Sans','sans-serif';
+    height: 86px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative; /* Position relative for z-index to work */
+  }
+  .logo {
+    width: 95px;
+    height: 43.95px;
+    background-image: url();
+    background-size: contain;
+    margin-left: 38px;
+    margin-top: 13px;
+  }
+  .nav_btn{
+    height: 70px;
+    width: 687.36px;
+    margin: 0px 40px 16px 0px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 15px;
+  }
+  .btn1{
+    padding: 25px 15px;
+    margin: 0px 5px;
+  
+  }
+  .btn2{
+    height: 32px;
+    text-align: center;
+    width: 127px;
+    background-color: #1266F1;
+    margin-top: 7px;
+    padding-top: 15px;
+    padding-left: 10px;
+    border-radius:5px ;}
+
+.div1{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+}
+
+.hero1{
+    width: 255px;
+    height: 200px;
+    margin: 22px;
+    /* background:#051e47; */
+    position: relative;
+}
+.ctn2{
+    height: 420px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+.hero1::after,.hero1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(rgb(0, 77, 135),rgb(16, 90, 90),rgb(188, 230, 171),rgb(0, 77, 135));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding:3px;
+    border-radius: 10px;
+}
+
+.hero1:hover{
+    box-shadow: 0 0 20px 0px rgba(213, 215, 222, 0.5);
+  }
+.hero1::before{
+    filter: blur(1.5rem);
+    opacity: 0.7;
+}
+.ah img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* styles.css */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin:  0px 50px;
+}
+.text{
+    color: azure;
+    margin-left: 169px;
+    font-size: 20px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.text2{
+    padding-top: 22px;
+    color: rgb(209, 122, 16);
+    margin-left: 169px;
+}
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.cta h1{
+    font-size: 24px;
+  }
+  .cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(40, 93, 152, 0.7),rgba(10, 0, 99, 0.7)),url(banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+.text3{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:rgb(209, 122, 16) ;
+}
+.text4{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color:rgb(227, 227, 227) ;
+}
+
+.b1{
+    background-image:url("https://cdn.marvel.com/content/1x/02_lunarx_slipcasefront_1_14.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .b2{
+    background-image:url("https://wallpapercave.com/wp/wp8139933.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+   .b3{
+    background-image:url("https://cdn.dribbble.com/users/1124806/screenshots/9158801/media/351d703714f955dbc1e6e5275b080b53.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .b4{
+    background-image:url("https://static.euronews.com/articles/stories/08/22/67/80/808x539_cmsv2_1c34364d-ca03-5081-8d31-e79cd53aa87b-8226780.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .b5{
+    background-image:url("http://wonderfulengineering.com/wp-content/uploads/2014/01/beautiful-wallpaper-29.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .b6{
+    background-image:url("https://wallpapercave.com/wp/wp4219851.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .b7{
+    background-image:url("https://kinsta.com/wp-content/uploads/2021/07/web-components-1024x512.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .b8{
+    background-image:url("https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2024/08/squid-game-2-1722505843.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+footer {
+    background-image: url(https://www.ecellrgpv.com/assets/img/footer-02.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #ECF0F1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.ctn3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ctn3 > div {
+    flex: 1;
+    margin: 10px;
+}
+
+.secabout {
+    max-width: 300px;
+}
+
+.footImg {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.secabout p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.icon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.icon li {
+    display: inline;
+}
+
+.icon a {
+    color: #ECF0F1;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.icon a:hover {
+    color: #3498DB;
+}
+
+.qucklinks h2, .contact h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498DB;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.qucklinks ul, .contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.qucklinks li, .contact li {
+    margin: 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.qucklinks li:hover, .contact li:hover {
+    color: #3498DB;
+}
+
+.contact ul li {
+    font-size: 14px;
+}
+
+.contact ul li a {
+    color: #ECF0F1;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+
+}
+.hero .btn-area{
+    display: block;
+    background: #1266F1;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    width: 170px;
+    line-height: 40px;
+    margin: 50px auto 0;
+    border-radius: 50px;
+}
+.hero  .btn-area .BTN2{
+    display: none;
+}
+.hero #btnBox{
+    display: none;
+}
+.hide{
+    display: none;
+}
+main{
+    margin-bottom: 100px;
+}
+.cardData{
+        background:transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.8s;
+        
+      }
+.cardData:hover{
+        background:rgba(38, 33, 98, 0.7);
+        cursor: pointer;
+      }
+.cardData h2{
+        width: 100%;
+        font-weight: 800;
+        color:#fff;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+      }
+.cardData:hover h2{
+        bottom: 49%;
+        opacity:1 ;
+      }
+      .cardData a{
+        width: 100%;
+        font-weight: 600;
+        color:#fff;
+        font-size: 18px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .cardData:hover a{
+        bottom: 25%;
+        opacity:1 ;
+      }
