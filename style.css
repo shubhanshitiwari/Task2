@@ -491,7 +491,7 @@ main{
         background:transparent;
         height: 100%;
         width: 100%;
-        position:absolute;
+        position: absolute;
         top: 0;
         left: 0;
         transition: 0.8s;
@@ -525,7 +525,7 @@ main{
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        position:absolute ;
+        position: absolute;
         opacity: 0;
         transition: 0.5s;
       }
